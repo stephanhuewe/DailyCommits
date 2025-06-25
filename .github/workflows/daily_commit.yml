@@ -18,7 +18,7 @@ jobs:
       run: |
         FILE="commit_number.md"
         if [ ! -f "$FILE" ]; then
-          echo "Hello, my name is bishwa shah" > "$FILE"
+          echo "Hello, my name is Stephan" > "$FILE"
           echo "commit number: 1" >> "$FILE"
         else
           CURRENT_COUNT=$(grep -oP 'commit number: \K\d+' "$FILE")
