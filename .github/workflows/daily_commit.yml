@@ -29,7 +29,7 @@ jobs:
           sed -i "/commit number: /c\commit number: $NEXT_COUNT" "$FILE"
         fi
         git config --global user.name "stephanhuewe"
-        git config --global user.email "info@huestel.de"
+        git config --global user.email "sh@huewe.info"
         git add "$FILE"
         git commit -m "Hello, my name is Stephan nice to meet you"
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/stephanhuewe/DailyCommits.git
